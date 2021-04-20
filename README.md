@@ -47,3 +47,4 @@ docker exec -i -t <CONTAINER> /bin/bash
 ## Reference 
 
 [extremely useful docker commands - CodeNotary](https://www.codenotary.com/blog/extremely-useful-docker-commands/)
+[도커 주요 옵션](https://khj93.tistory.com/entry/Docker-Docker-option-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%AA%A9%EB%A1%9D)
