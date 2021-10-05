@@ -38,10 +38,16 @@
 ## Frequently 
 
 ```shell
-docker kill $(docker ps -q) # Kill all containers 
-docker rm $(docker ps -a -q) # Delete all stopped containers 
+docker kill $(docker ps -aq) # Kill all containers 
+docker rm $(docker ps -aq) # Delete all stopped containers 
 docker rmi $(docker images -q) # Delete all images 
 docker exec -i -t <CONTAINER> /bin/bash
+```
+
+```
+podman kill $(podman ps -aq) # Kill all cotainers 
+podman rm $(podman ps -aq) # Kill all cotainers 
+podman system prune --all --force && podman rmi --all # Delete all images 
 ```
 
 ## Reference 
