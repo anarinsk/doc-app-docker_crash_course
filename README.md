@@ -48,6 +48,7 @@ docker exec -i -t <CONTAINER> /bin/bash
 podman kill $(podman ps -aq) # Kill all cotainers 
 podman rm $(podman ps -aq) # Kill all cotainers 
 podman system prune --all --force && podman rmi --all # Delete all images 
+podman system reset # reset podman 
 ```
 
 ## Reference 
